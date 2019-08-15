@@ -16,13 +16,7 @@ WHERE last_name LIKE 'e%'
   AND last_name LIKE '%e';
 
 
-SELECT *
-FROM employees
-WHERE hire_date > '1989-12-31'
-    AND
-     hire_date < '2000-1-1';
-    AND
-    birth_date like '%12-25';
+select * from employees where hire_date like '199%' AND birth_date like '%12-25';
 
 SELECT last_name
 FROM employees
